@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Flame, Shield, Clock, Users } from "lucide-react";
+import heroImage from "@/assets/hero.png";
 
 export function Hero() {
   return (
@@ -9,7 +10,7 @@ export function Hero() {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-                Cremazione a{" "}
+                Funerale con Cremazione a{" "}
                 <span className="text-primary">Catania e Provincia</span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg">
@@ -19,12 +20,15 @@ export function Hero() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="group">
-                Richiedi Preventivo
-                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+              <Button size="lg" className="group" asChild>
+                <a href="tel:+393484191693">
+                  Chiama Ora
+                </a>
               </Button>
-              <Button size="lg" variant="outline">
-                Chiama Ora
+              <Button size="lg" variant="outline" asChild>
+                <a href="https://wa.me/393484191693">
+                  WhatsApp
+                </a>
               </Button>
             </div>
 
@@ -54,14 +58,12 @@ export function Hero() {
           </div>
 
           <div className="relative">
-            <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/20 to-orange-600/20 flex items-center justify-center">
-              <div className="text-center space-y-4">
-                <div className="h-24 w-24 mx-auto rounded-full bg-primary/20 flex items-center justify-center">
-                  <Flame className="h-12 w-12 text-primary" />
-                </div>
-                <h3 className="text-xl font-semibold">Cremazione</h3>
-                <p className="text-muted-foreground">Con rispetto e dignità</p>
-              </div>
+            <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
+              <img 
+                src={heroImage} 
+                alt="Cremazioni Parisi Mario" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>

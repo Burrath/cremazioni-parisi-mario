@@ -5,6 +5,11 @@ import { Flame, Home, Car, FileText, Clock, Heart } from "lucide-react";
 
 const services = [
   {
+    icon: Flame,
+    title: "Cremazione",
+    description: "Servizio di cremazione presso forno autorizzato di Misterbianco"
+  },
+  {
     icon: Home,
     title: "Camera Ardente",
     description: "Allestita presso residenza/domicilio del committente"
@@ -100,9 +105,11 @@ export function CremationService() {
         </div>
 
         <div className="text-center mt-12">
-          <Button size="lg" className="group">
-            Richiedi Preventivo Personalizzato
-            <Clock className="ml-2 h-4 w-4 group-hover:rotate-12 transition-transform" />
+          <Button size="lg" className="group" asChild>
+            <a href="#contatti">
+              Contattaci
+              <Clock className="ml-2 h-4 w-4 group-hover:rotate-12 transition-transform" />
+            </a>
           </Button>
         </div>
       </div>

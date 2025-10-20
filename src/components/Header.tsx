@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { Phone, Mail, Flame } from "lucide-react";
+import { Phone, Mail } from "lucide-react";
+import logoImage from "@/assets/logo.png";
 
 export function Header() {
   return (
@@ -10,11 +11,11 @@ export function Header() {
           <div className="flex items-center space-x-4">
             <div className="flex items-center space-x-1">
               <Phone className="h-3 w-3" />
-              <span>095 93 88 11</span>
+              <a href="tel:+393484191693" className="hover:text-primary transition-colors">+39 348 419 1693</a>
             </div>
             <div className="flex items-center space-x-1">
               <Mail className="h-3 w-3" />
-              <span>info@cremazioniparisi.it</span>
+              <a href="mailto:info@cremazioniparisi.it" className="hover:text-primary transition-colors">info@cremazioniparisi.it</a>
             </div>
           </div>
           <div className="hidden md:block">
@@ -24,36 +25,33 @@ export function Header() {
 
         {/* Main navigation */}
         <div className="flex items-center justify-between py-4">
-          <div className="flex items-center space-x-2">
-            <div className="h-8 w-8 rounded bg-gradient-to-br from-orange-500 to-red-600 flex items-center justify-center">
-              <Flame className="h-5 w-5 text-white" />
-            </div>
-            <div>
-              <h1 className="text-xl font-bold">Cremazioni</h1>
-              <p className="text-xs text-muted-foreground">Parisi Mario</p>
-            </div>
+          <div className="flex items-center">
+            <img src={logoImage} alt="Cremazioni Parisi Logo" className="h-10 w-auto" />
           </div>
 
           <nav className="hidden md:flex items-center space-x-6">
-            <a href="#home" className="text-sm font-medium hover:text-primary transition-colors">
+            <a href="#home" className="text-sm font-medium hover:text-primary transition-colors scroll-smooth">
               Home
             </a>
-            <a href="#chi-siamo" className="text-sm font-medium hover:text-primary transition-colors">
+            <a href="#chi-siamo" className="text-sm font-medium hover:text-primary transition-colors scroll-smooth">
               Chi Siamo
             </a>
-            <a href="#cremazione" className="text-sm font-medium hover:text-primary transition-colors">
+            <a href="#cremazione" className="text-sm font-medium hover:text-primary transition-colors scroll-smooth">
               Cremazione
             </a>
-            <a href="#contratti" className="text-sm font-medium hover:text-primary transition-colors">
+            <a href="#territorio" className="text-sm font-medium hover:text-primary transition-colors scroll-smooth">
+              Territorio
+            </a>
+            <a href="#contratti" className="text-sm font-medium hover:text-primary transition-colors scroll-smooth">
               Contratti
             </a>
-            <a href="#contatti" className="text-sm font-medium hover:text-primary transition-colors">
-              Contatti
+            <a href="#contatti" className="text-sm font-medium hover:text-primary transition-colors scroll-smooth">
+              Dove trovarci
             </a>
           </nav>
 
-          <Button size="sm" className="hidden md:inline-flex">
-            Richiedi Preventivo
+          <Button size="sm" className="hidden md:inline-flex" asChild>
+            <a href="#contatti">Contattaci</a>
           </Button>
         </div>
       </div>

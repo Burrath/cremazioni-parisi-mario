@@ -1,4 +1,5 @@
-import { Phone, Mail, MapPin, Clock, Flame } from "lucide-react";
+import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import logoImage from "@/assets/logo.png";
 
 export function Footer() {
   return (
@@ -7,14 +8,8 @@ export function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <div className="h-8 w-8 rounded bg-gradient-to-br from-orange-500 to-red-600 flex items-center justify-center">
-                <Flame className="h-5 w-5 text-white" />
-              </div>
-              <div>
-                <h3 className="text-xl font-bold">Cremazioni</h3>
-                <p className="text-sm text-gray-400">Parisi Mario</p>
-              </div>
+            <div className="flex items-center">
+              <img src={logoImage} alt="Cremazioni Parisi Logo" className="h-10 w-auto" />
             </div>
             <p className="text-sm text-gray-300 leading-relaxed">
               Impresa Parisi Mario opera dal 1954 per cremazione a Catania, 
@@ -28,11 +23,11 @@ export function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Phone className="h-4 w-4 text-primary" />
-                <span className="text-sm">095 93 88 11</span>
+                <a href="tel:+393484191693" className="text-sm hover:text-primary transition-colors">+39 348 419 1693</a>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 text-primary" />
-                <span className="text-sm">info@cremazioniparisi.it</span>
+                <a href="mailto:info@cremazioniparisi.it" className="text-sm hover:text-primary transition-colors">info@cremazioniparisi.it</a>
               </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="h-4 w-4 text-primary mt-0.5" />
