@@ -1,8 +1,8 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { MapPin, Clock, Phone, Car } from "lucide-react";
 
-const sicilianProvinces = [
-  "Catania", "Palermo", "Messina", "Siracusa", "Ragusa", "Trapani", "Agrigento", "Caltanissetta", "Enna"
+const cataniaAreas = [
+  "Catania", "Acireale", "Paternò", "Misterbianco", "Adrano", "Giarre", "Biancavilla", "Belpasso", "Aci Catena"
 ];
 
 export function Territory() {
@@ -10,29 +10,29 @@ export function Territory() {
     <section id="territorio" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center space-y-4 mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold">Servizi su Tutto il Territorio Siciliano</h2>
+          <h2 className="text-3xl md:text-4xl font-bold">Servizi a Catania e Provincia</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Cremazioni Parisi Mario offre i propri servizi di cremazione e funerali 
-            su tutto il territorio della Sicilia, garantendo professionalità e rispetto 
-            in ogni provincia dell'isola.
+            a Catania e in tutta la sua provincia, garantendo professionalità e rispetto 
+            in ogni comune dell'area etnea.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
           <div className="space-y-6">
             <div className="space-y-4">
-              <h3 className="text-2xl font-bold">Copertura Completa</h3>
+              <h3 className="text-2xl font-bold">Copertura Provinciale</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Operiamo su tutte le 9 province siciliane, garantendo un servizio capillare 
+                Operiamo a Catania e in tutta la sua provincia, garantendo un servizio capillare 
                 e professionale. La nostra esperienza e la nostra rete di collaboratori ci 
-                permettono di offrire assistenza completa in ogni angolo della Sicilia.
+                permettono di offrire assistenza completa in ogni comune dell'area etnea.
               </p>
             </div>
 
             <div className="grid grid-cols-3 gap-3">
-              {sicilianProvinces.map((province, index) => (
+              {cataniaAreas.map((area, index) => (
                 <div key={index} className="bg-white dark:bg-gray-800 rounded-lg p-3 text-center shadow-sm">
-                  <span className="text-sm font-medium">{province}</span>
+                  <span className="text-sm font-medium">{area}</span>
                 </div>
               ))}
             </div>
@@ -43,8 +43,8 @@ export function Territory() {
               <div className="text-center space-y-4">
                 <MapPin className="h-16 w-16 mx-auto text-primary" />
                 <div>
-                  <h3 className="text-xl font-semibold">Sicilia</h3>
-                  <p className="text-muted-foreground">Tutto il territorio coperto</p>
+                  <h3 className="text-xl font-semibold">Catania e Provincia</h3>
+                  <p className="text-muted-foreground">Area etnea coperta</p>
                 </div>
               </div>
             </div>

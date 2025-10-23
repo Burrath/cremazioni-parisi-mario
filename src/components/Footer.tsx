@@ -3,7 +3,7 @@ import logoImage from "@/assets/logo.png";
 
 export function Footer() {
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200">
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
@@ -11,7 +11,7 @@ export function Footer() {
             <div className="flex items-center">
               <img src={logoImage} alt="Cremazioni Parisi Logo" className="h-10 w-auto" />
             </div>
-            <p className="text-sm text-gray-300 leading-relaxed">
+            <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
               Impresa Parisi Mario opera dal 1954 per cremazione a Catania, 
               garantendo un intervento immediato in tutta la Sicilia.
             </p>

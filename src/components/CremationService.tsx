@@ -56,7 +56,7 @@ export function CremationService() {
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
           <div className="space-y-6">
             <div className="space-y-4">
-              <h3 className="text-2xl font-bold">Il Costo della Cremazione Comprende</h3>
+              <h3 className="text-2xl font-bold">Attenzione ai costi</h3>
               <p className="text-muted-foreground leading-relaxed">
                 La nostra Impresa Parisi Mario Servizi Funebri è particolarmente attenta 
                 al contenimento dei costi sia per politica ed etica aziendale e grazie 
