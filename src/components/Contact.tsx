@@ -44,7 +44,7 @@ export function Contact() {
                 <div className="space-y-3">
                   <div className="flex items-center space-x-3">
                     <Phone className="h-4 w-4 text-muted-foreground" />
-                    <a href="tel:+393484191693" className="font-medium hover:text-primary transition-colors">+39 348 419 1693</a>
+                    <a href="tel:+393484191693" className="font-medium hover:text-primary transition-colors">Tel: +39 348 4191693</a>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Mail className="h-4 w-4 text-muted-foreground" />
@@ -52,7 +52,7 @@ export function Contact() {
                   </div>
                   <div className="flex items-center space-x-3">
                     <MessageCircle className="h-4 w-4 text-muted-foreground" />
-                    <a href="https://wa.me/393484191693" className="font-medium hover:text-primary transition-colors">WhatsApp disponibile</a>
+                    <a href="https://wa.me/393484191693" className="font-medium hover:text-primary transition-colors">Whatsapp: +39 348 4191693</a>
                   </div>
                 </div>
               </CardContent>

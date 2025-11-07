@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Phone, Mail } from "lucide-react";
+import { Phone, Mail, MessageCircle } from "lucide-react";
 import logoImage from "@/assets/logo.png";
 
 export function Header() {
@@ -11,7 +11,11 @@ export function Header() {
           <div className="flex items-center space-x-4">
             <div className="flex items-center space-x-1">
               <Phone className="h-3 w-3" />
-              <a href="tel:+393484191693" className="hover:text-primary transition-colors">+39 348 419 1693</a>
+              <a href="tel:+393484191693" className="hover:text-primary transition-colors">Tel: +39 348 4191693</a>
+            </div>
+            <div className="flex items-center space-x-1">
+              <MessageCircle className="h-3 w-3" />
+              <a href="https://wa.me/393484191693" className="hover:text-primary transition-colors">Whatsapp: +39 348 4191693</a>
             </div>
             <div className="flex items-center space-x-1">
               <Mail className="h-3 w-3" />
