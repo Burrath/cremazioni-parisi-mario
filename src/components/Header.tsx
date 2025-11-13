@@ -17,7 +17,7 @@ export function Header() {
               <MessageCircle className="h-3 w-3" />
               <a href="https://wa.me/393484191693" className="hover:text-primary transition-colors">Whatsapp: +39 348 4191693</a>
             </div>
-            <div className="flex items-center space-x-1">
+            <div className="hidden md:flex items-center space-x-1">
               <Mail className="h-3 w-3" />
               <a href="mailto:info@cremazioniparisi.it" className="hover:text-primary transition-colors">info@cremazioniparisi.it</a>
             </div>
