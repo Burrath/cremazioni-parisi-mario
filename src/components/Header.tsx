@@ -9,13 +9,27 @@ export function Header() {
         {/* Top bar with contact info */}
         <div className="flex items-center justify-between py-2 text-sm text-muted-foreground">
           <div className="flex items-center space-x-4">
-            <div className="flex items-center space-x-1">
-              <Phone className="h-3 w-3" />
-              <a href="tel:+393484191693" className="hover:text-primary transition-colors">Tel: +39 348 4191693</a>
+            <div className="flex items-center">
+              <a
+                href="tel:+393484191693"
+                aria-label="Chiama Cremazioni Parisi +39 348 4191693"
+                className="flex items-center space-x-1 hover:text-primary transition-colors"
+              >
+                <Phone className="h-4 w-4 md:h-3 md:w-3" />
+                <span className="hidden md:inline">Tel:</span>
+                <span>+39 348 4191693</span>
+              </a>
             </div>
-            <div className="flex items-center space-x-1">
-              <MessageCircle className="h-3 w-3" />
-              <a href="https://wa.me/393484191693" className="hover:text-primary transition-colors">Whatsapp: +39 348 4191693</a>
+            <div className="flex items-center">
+              <a
+                href="https://wa.me/393484191693"
+                aria-label="Apri WhatsApp Cremazioni Parisi +39 348 4191693"
+                className="flex items-center space-x-1 hover:text-primary transition-colors"
+              >
+                <MessageCircle className="h-4 w-4 md:h-3 md:w-3" />
+                <span className="hidden md:inline">Whatsapp:</span>
+                <span>+39 348 4191693</span>
+              </a>
             </div>
             <div className="hidden md:flex items-center space-x-1">
               <Mail className="h-3 w-3" />
@@ -28,7 +42,7 @@ export function Header() {
         </div>
 
         {/* Main navigation */}
-        <div className="flex items-center justify-between py-4">
+        <div className="flex flex-wrap items-center justify-between gap-4 py-4">
           <div className="flex items-center">
             <img src={logoImage} alt="Cremazioni Parisi Logo" className="h-10 w-auto" />
           </div>
@@ -54,7 +68,7 @@ export function Header() {
             </a>
           </nav>
 
-          <Button size="sm" className="hidden md:inline-flex" asChild>
+          <Button size="sm" className="inline-flex justify-center" asChild>
             <a href="#contatti">Contattaci</a>
           </Button>
         </div>
